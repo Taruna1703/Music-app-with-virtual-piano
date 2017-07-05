@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Song App</title>
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="welcome-screen hidden">
+            <h1> Welcome to Songify </h1>
+            <h3> Enter name to access your account </h3>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Name" id="name-input">
+                <button> Go </button>
+            </div>
+        </section>
+        <div class="main">
+            <header>
+                <div class="right floated user-name"> </div>
+            </header>
+            <section class="content">
+                <audio src="song1.mp3"></audio>
+
+                <table id="songs">
+                    <thead class="list-headers">
+                            <tr><td> Title </td>
+                            <td> Artist </td>
+                            <td> Album </td>
+                            <td> Duration </td>
+                        </tr></thead>
+                        <!-- <div class="song-list"> -->
+                            <tbody><tr class="song" id="song1">
+                                <td class="song-name"></td>
+                                <td class="song-artist"></td>
+                                <td class="song-album"></td>
+                                <td class="song-length"></td>
+                            </tr>
+                            <tr class="song" id="song2">
+                                <td class="song-name"></td>
+                                <td class="song-artist"></td>
+                                <td class="song-album"></td>
+                                <td class="song-length"></td>
+                            </tr>
+                            <tr class="song" id="song3">
+                                <td class="song-name"></td>
+                                <td class="song-artist"></td>
+                                <td class="song-album"></td>
+                                <td class="song-length"></td>
+                            </tr>
+                            <tr class="song" id="song4">
+                                <td class="song-name"></td>
+                                <td class="song-artist"></td>
+                                <td class="song-album"></td>
+                                <td class="song-length"></td>
+                            </tr>
+                        <!-- </div> -->
+                    </tbody></table>
+
+<div class="current-song-wrapper">
+        <img src="" class="current-song-image">
+        <div>
+        <p class="current-song-name"></p>
+        <p class="current-song-album"></p>
+        </div>
+        </div>
+
+</section>
+<footer>
+                <div class="controls">
+                    <div class="player-buttons">
+                        <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="progress-wrapper">
+                        <span class="time-elapsed"> </span>
+                        <div class="player-progress">
+                            <div class="progress-filled"> </div>
+                        </div>
+                        <span class="song-duration"></span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="jquery.js">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
+    </script>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
