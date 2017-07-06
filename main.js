@@ -179,11 +179,12 @@ $('.play-icon').on('click', function() {
   toggleSong();
 });
 
-$('body').on('keypress', function(event) {
-if (event.keyCode == 32)
- {
-    toggleSong();
- }
+$('body').on('keypress',function(event) {
+    var target = event.target;
+    if (event.keyCode == 32 && target.tagName !='INPUT')
+    {
+        toggleSong();
+    }
 });
 
 
