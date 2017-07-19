@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="font-awesome.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+
 </head>
 
 <body>
     <div class="wrapper">
-        <section class="welcome-screen hidden">
+        <section class="welcome-screen">
             <h1> Welcome to Songify </h1>
             <h3> Enter name to access your account </h3>
             <div class="input-wrapper">
@@ -19,7 +20,7 @@
                 <button> Go </button>
             </div>
         </section>
-        <div class="main">
+        <div class="main hidden">
             <header>
                 <div class="right floated user-name"> </div>
             </header>
@@ -69,11 +70,61 @@
         </div>
         </div>
 
+
 </section>
+<section class="piano hidden">
+        <div class="piano-container">
+<span class="keys" id="key_1"><div class="label">Q</div></span>
+<span class="black keys" id="key-1"  style="left:25px;"><div class="Blabel">2</div></span>
+<span class="keys" id="key_2"><div class="label">W</div></span>
+<span class="black keys" id="key-2" style="left:65px;"><div class="Blabel">3</div></span>
+<span class="keys" id="key_3"><div class="label">E</div></span>
+<span class="keys" id="key_4"><div class="label">R</div></span>
+<span class="black keys" id="key-3"  style="left:140px;"><div class="Blabel">5</div></span>
+<span class="keys" id="key_5"><div class="label">T</div></span>
+<span class="black keys" id="key-4"  style="left:180px;"><div class="Blabel">6</div></span>
+<span class="keys" id="key_6"><div class="label">Y</div></span>
+<span class="black keys" id="key-5"  style="left:220px;"><div class="Blabel">7</div></span>
+<span class="keys" id="key_7"><div class="label">U</div></span>
+<span class="keys" id="key_8"><div class="label">I</div></span>
+<span class="black keys" id="key-6"  style="left:295px;"><div class="Blabel">9</div></span>
+<span class="keys" id="key_9"><div class="label">O</div></span>
+<span class="black keys" id="key-7"  style="left:335px;"><div class="Blabel">0</div></span>
+<span class="keys" id="key_10"><div class="label">P</div></span>
+<span class="keys" id="key_11"><div class="label">[</div></span>
+<span class="black keys" id="key-8"  style="left:405px;"><div class="Blabel">=</div></span>
+<span class="keys" id="key_12"><div class="label">]</div></span>
+<span class="black keys" id="key-9"  style="left:445px;"><div class="Blabel">A</div></span>
+<span class="keys" id="key_13"><div class="label">Z</div></span>
+<span class="black keys" id="key-10"  style="left:485px;"><div class="Blabel">S</div></span>
+<span class="keys" id="key_14"><div class="label">X</div></span>
+<span class="keys" id="key_15"><div class="label">C</div></span>
+<span class="black keys" id="key-11"  style="left:555px;"><div class="Blabel">F</div></span>
+<span class="keys" id="key_16"><div class="label">V</div></span>
+<span class="black keys" id="key-12"  style="left:595px;"><div class="Blabel">G</div></span>
+<span class="keys" id="key_17"><div class="label">B</div></span>
+<span class="keys" id="key_18"><div class="label">N</div></span>
+<span class="black keys" id="key-13"  style="left:665px;"><div class="Blabel">J</div></span>
+<span class="keys" id="key_19"><div class="label">M</div></span>
+<span class="black keys" id="key-14"  style="left:705px;"><div class="Blabel">K</div></span>
+<span class="keys" id="key_20"><div class="label">,</div></span>
+<span class="black keys" id="key-15"  style="left:745px;"><div class="Blabel">L</div></span>
+<span class="keys" id="key_21"><div class="label">.</div></span>
+    </div>
+
+</section>
+
+
+
 <footer>
                 <div class="controls">
                     <div class="player-buttons">
-                        <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+                      <i class="fa fa-random clickable disabled" aria-hidden="true"></i>
+                      <i class="fa fa-step-backward clickable" aria-hidden="true"></i>
+                     <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+                     <i class="fa fa-step-forward clickable" aria-hidden="true"></i>
+                    <i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
+                    <i class="fa fa-braille clickable" aria-hidden="true"></i>
                     </div>
                     <div class="progress-wrapper">
                         <span class="time-elapsed"> </span>
@@ -85,13 +136,14 @@
                 </div>
             </footer>
         </div>
-    </div>
+</div>
     <script src="jquery.js">
     </script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
     </script>
     <script src="main.js">
     </script>
+    <script src="audiosynth.js"></script>
 </body>
 
 </html>
